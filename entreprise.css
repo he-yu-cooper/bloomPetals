@@ -1,0 +1,153 @@
+form {
+  float: right;
+  margin-right: 10px;
+}
+
+input[type="search"] {
+  width: 300px;
+  ;
+  height: 30px;
+  border-radius: 10px;
+  background-color: antiquewhite;
+}
+
+input[type="submit"] {
+  border-radius: 20px;
+  background-color: antiquewhite;
+  cursor: pointer;
+}
+
+nav button {
+  background-color: antiquewhite;
+  margin-left: 120px;
+  border-radius: 20px;
+  cursor: pointer;
+}
+
+// gradient: https://www.gradientmagic.com/collection/rainbowstandard
+@import url("https://fonts.googleapis.com/css?family=Lato:300");
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background: #222;
+}
+
+.gradient-border {
+  --border-width: 3px;
+
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 150px;
+  height: 150px;
+  font-family: Lato, sans-serif;
+  font-size: 1.5rem;
+  text-transform: uppercase;
+  color: white;
+  background: #222;
+  border-radius: var(--border-width);
+  background-image: url(./img.html/3.jpg);
+  background-size: cover;
+  float: left;
+
+  &::after {
+    position: absolute;
+    content: "";
+    top: calc(-1 * var(--border-width));
+    left: calc(-1 * var(--border-width));
+    z-index: -1;
+    width: calc(100% + var(--border-width) * 2);
+    height: calc(100% + var(--border-width) * 2);
+    background: linear-gradient(60deg,
+        hsl(224, 85%, 66%),
+        hsl(269, 85%, 66%),
+        hsl(314, 85%, 66%),
+        hsl(359, 85%, 66%),
+        hsl(44, 85%, 66%),
+        hsl(89, 85%, 66%),
+        hsl(134, 85%, 66%),
+        hsl(179, 85%, 66%));
+    background-size: 300% 300%;
+    background-position: 0 50%;
+    border-radius: calc(2 * var(--border-width));
+    animation: moveGradient 4s alternate infinite;
+  }
+}
+
+@keyframes moveGradient {
+  50% {
+    background-position: 100% 50%;
+  }
+}
+
+h1 {
+  display: flex;
+  justify-content: center;
+  margin-top: 200px;
+  font-family: cursive;
+  font-size: 3rem;
+  color: rgba(255, 255, 255, 1);
+}
+
+#p {
+  max-width: 600px;
+  margin: 0 auto;
+  margin-bottom: 20px;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  padding: 20px;
+  font-family: cursive;
+  font-size: 1rem;
+  color: white;
+  border: transparent solid;
+  background-color: rgba(255, 255, 255, 0.1);
+}
+
+article {
+  display: flex;
+  justify-content: center;
+  padding: 10px;
+  margin: 100px;
+  width: 20%;
+  margin-left: auto;
+  margin-right: auto;
+  font-style: italic;
+  background-color: lightgray;
+  font-size: 120%;
+}
+
+#bloom {
+  display: flex;
+  justify-content: center;
+  color: antiquewhite;
+  font-family: monospace;
+  font-size: 5rem;
+}
+
+#p-1 {
+
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 30px;
+  color: white;
+}
+
+footer {
+  margin-top: 200px;
+  display: flex;
+  justify-content: space-evenly;
+  border: black outset;
+  background-color: rgba(255, 255, 255, 0.5);
+  color: #222;
+}
+a:link{
+  color: #222;
+}
+a:visited{
+  color: azure;
+}

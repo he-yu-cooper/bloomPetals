@@ -1,0 +1,150 @@
+
+.form{
+    float: right;
+    margin-right: 10px;
+  }
+  
+  .input[type="search"] {
+    width: 300px;
+    ;
+    height: 30px;
+    border-radius: 10px;
+    background-color: antiquewhite;
+  
+  }
+  
+  .input[type="submit"] {
+    border-radius: 20px;
+    background-color: antiquewhite;
+    cursor: pointer;
+  }
+  
+  nav button {
+    background-color: antiquewhite;
+    margin-left: 120px;
+    border-radius: 20px;
+    cursor: pointer;
+  }
+  
+  // gradient: https://www.gradientmagic.com/collection/rainbowstandard
+  @import url("https://fonts.googleapis.com/css?family=Lato:300");
+  
+  body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: #222;
+  }
+  
+  .gradient-border {
+    --border-width: 3px;
+  
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 150px;
+    height: 150px;
+    font-family: Lato, sans-serif;
+    font-size: 1.5rem;
+    text-transform: uppercase;
+    color: white;
+    background: #222;
+    border-radius: var(--border-width);
+    background-image: url(./img.html/3.jpg);
+    background-size: cover;
+    float: left;
+  
+    &::after {
+      position: absolute;
+      content: "";
+      top: calc(-1 * var(--border-width));
+      left: calc(-1 * var(--border-width));
+      z-index: -1;
+      width: calc(100% + var(--border-width) * 2);
+      height: calc(100% + var(--border-width) * 2);
+      background: linear-gradient(60deg,
+          hsl(224, 85%, 66%),
+          hsl(269, 85%, 66%),
+          hsl(314, 85%, 66%),
+          hsl(359, 85%, 66%),
+          hsl(44, 85%, 66%),
+          hsl(89, 85%, 66%),
+          hsl(134, 85%, 66%),
+          hsl(179, 85%, 66%));
+      background-size: 300% 300%;
+      background-position: 0 50%;
+      border-radius: calc(2 * var(--border-width));
+      animation: moveGradient 4s alternate infinite;
+    }
+  }
+  
+  @keyframes moveGradient {
+    50% {
+      background-position: 100% 50%;
+    }
+  }
+.SHOP img{
+width:1000px;
+height: 500px;
+  float: left;
+}
+.shop{
+display: grid;
+justify-content: center;
+margin-top: 80px;
+}
+.good{
+  display: grid;
+  text-align: center;
+  margin-top: 10%;
+  color: white;
+  font-style: italic;
+  background-color: rgba( 60, 60, 60, 0.9);
+  border-radius: 20px;
+}
+#contact{
+  display: flex;
+  justify-content: center;
+  margin-top: 1%;
+  font-size: 2rem;
+font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+form {
+  width: 300px;
+  margin: 0 auto;
+}
+label {
+  display: block;
+  margin-top: 20px;
+}
+input, select, textarea {
+  width: 100%;
+  padding: 10px;
+  margin-top: 5px;
+}
+.submit-btn {
+  margin-top: 20px;
+  background-color: #4CAF50;
+  color: white;
+  cursor: pointer;
+}
+.submit-btn:hover {
+  background-color: #45a049;
+}
+footer {
+  margin-top: 100px;
+  display: flex;
+  justify-content:space-evenly;
+  border: black outset;
+  background-color: rgba( 0, 0, 0, 0.5);
+  color: white;
+}
+a:link{
+  color: white;
+}
+a:visited{
+  color: wheat;
+}
